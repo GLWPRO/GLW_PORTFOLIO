@@ -63,7 +63,29 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:.92rem}
   .grid-2,.testimonials,.cert-gallery{grid-template-columns:1fr}
   nav .bar{flex-wrap:wrap;gap:8px}
   nav a{margin-left:.8rem}
+}/* --- Read More toggle --- */
+.about-text details { margin-top: 8px; }
+.about-text summary {
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 14px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: var(--rose-deep, #9156d7);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
+
+.about-text summary:hover {
+  background: var(--rose, #fb76f9);
+}
+}
+.about-text summary::-webkit-details-marker { display: none; } /* hide browser arrow */
+.about-text summary::after { content: " ▾"; }  /* little down arrow */
+.about-text details[open] summary::after { content: " ▴"; } /* flips arrow when open */
+
 </style>
 </head>
 <body>

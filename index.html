@@ -85,7 +85,15 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:.92rem}
 .about-text summary::-webkit-details-marker { display: none; } /* hide browser arrow */
 .about-text summary::after { content: " ▾"; }  /* little down arrow */
 .about-text details[open] summary::after { content: " ▴"; } /* flips arrow when open */
-
+.avatar img {
+  width: 200px;              /* adjust size */
+  height: 200px;
+  border-radius: 50%;        /* circle shape */
+  object-fit: cover;         /* keeps proportions */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  display: block;
+  margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -105,9 +113,8 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:.92rem}
 
 <header class="hero">
   <div class="container wrap">
-    <div class="avatar">
-  <img src="headshot.jpg" alt="Professional headshot of Geri Lynn Williams"
-       style="width:200px; height:200px; border-radius:50%; border:4px solid #c48b9f; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.2); display:block; margin:0 auto 20px auto;">
+   <div class="avatar">
+  <img src="images/headshot.jpg" alt="Geri Lynn Williams Headshot">
 </div>
       <div class="kicker">Program Leadership & Professional Development</div>
       <h1>GERI LYNN WILLIAMS</h1>
